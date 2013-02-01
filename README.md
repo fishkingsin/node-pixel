@@ -1,7 +1,7 @@
 node-pixel
 ==========
 
-Use node.js on a Rpi to flip some RGB pixels.
+Use node.js on a Rpi to flip some RGB pixels(p9813).
 
 
 ## Prerequisites ##
@@ -18,11 +18,14 @@ Install node.js. I used a pre-compiled version of [v0.8.15](http://www.raspberry
 Checkout node-pixel.
 
 ```
-git checkout https://github.com/tinkerlog/node-pixel
+git checkout https://github.com/fishkingsin/node-pixel
 ```
 You have to rebuild the spi module.
 ```
-npm rebuild node_modules/spi
+pm rebuild node_modules/spi
+cd node_modules/spi
+npm install
+<!--npm rebuild node_modules/spi-->
 ```
 
 
