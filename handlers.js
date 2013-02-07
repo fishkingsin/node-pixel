@@ -3,15 +3,15 @@
 var util = require("util");
 var sys = require('sys');
 
-
+var MAX_LEDS = 255;
+var MAX_STEPS = 1;
 var Pixel = require('adafruit_pixel').Pixel;
-var pixels = new Pixel('/dev/spidev0.0', 25);
+var pixels = new Pixel('/dev/spidev0.0', MAX_LEDS);
 pixels.all(0, 0, 0);
 pixels.sync();
 
 
-var MAX_LEDS = 25;
-var MAX_STEPS = 10;
+
 
 var animation = {
   running: false,
